@@ -1,0 +1,1426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vogue Dental &amp; Aesthetics — Lahore</title>
+    <meta
+      name="description"
+      content="Dentistry and aesthetic medicine under one roof in Lahore. Veneers, implants, aligners, HydraFacial, Botox and more."
+    />
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Inter:opsz,wght@14..32,300..500&family=Great+Vibes&family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      /* 1rem = 1 design px x 10 on desktop: the page scales from the 1300px artboard */
+      (function () {
+        var d = document.documentElement;
+        function fit() {
+          var w = d.clientWidth;
+          d.style.fontSize = w >= 1024 ? w / 130 + "px" : "";
+        }
+        fit();
+        addEventListener("resize", fit);
+      })();
+    </script>
+    <style>
+      :root {
+        --cream: #f5ede1;
+        --ink: #292724;
+        --rust: #752108;
+        --line: rgba(41, 39, 36, 0.085);
+        --rule: #5c5954;
+        --hair: #dbd4c9;
+        --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+        --script: "Pinyon Script", cursive;
+        --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 10px;
+        -webkit-text-size-adjust: 100%;
+        background: var(--ink);
+      }
+      @media (min-width: 1024px) {
+        html {
+          font-size: calc(100vw / 130);
+        }
+      }
+      body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: var(--sans);
+        font-optical-sizing: auto;
+        font-weight: 400;
+        text-transform: uppercase;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+        position: relative;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      p,
+      h1,
+      h2,
+      h3,
+      ul,
+      ol,
+      figure {
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      ol {
+        list-style: none;
+      }
+      h1,
+      h2,
+      h3 {
+        font-weight: 400;
+      }
+
+      /* ---------- type scale (design px / 10) ---------- */
+      .t10 {
+        font-size: 1rem;
+        line-height: 1.35rem;
+        letter-spacing: -0.015em;
+      }
+      .t105 {
+        font-size: 1.05rem;
+        line-height: 1.35rem;
+        letter-spacing: -0.01em;
+      }
+      .t147 {
+        font-size: 1.47rem;
+        line-height: 1.95rem;
+        letter-spacing: -0.01em;
+      }
+      .h74 {
+        font-size: 7.4rem;
+        line-height: 8.8rem;
+        letter-spacing: -0.045em;
+      }
+      .h74 .ln {
+        display: block;
+        white-space: nowrap;
+      }
+      /* swash capitals */
+      .h74 i,
+      .big i {
+        font-family: var(--script);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.42em;
+        line-height: 0;
+        letter-spacing: 0;
+        margin-right: 0.13em;
+        display: inline-block;
+        transform: translateY(0.02em) scaleX(1.12);
+        transform-origin: 0 50%;
+      }
+      .h74 .ln > i:first-child,
+      .big .ln > i:first-child {
+        margin-left: -0.02em;
+      }
+      .h74 i.amp {
+        font-family: "Great Vibes", var(--script);
+        font-size: 1.2em;
+        margin-right: 0.1em;
+        transform: translateY(0.02em);
+      }
+      .u {
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+        text-decoration-thickness: 1px;
+      }
+      .arrow-ne {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        margin-left: 0.8rem;
+        vertical-align: -0.05rem;
+      }
+
+      /* ---------- desktop absolute layout ---------- */
+      .sec {
+        position: relative;
+      }
+      .a {
+        position: absolute;
+        left: calc(var(--l, 0) * 1rem);
+        top: calc(var(--t, 0) * 1rem);
+      }
+      .ar {
+        position: absolute;
+        right: calc(var(--r, 0) * 1rem);
+        top: calc(var(--t, 0) * 1rem);
+      }
+      .fill {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .pic {
+        position: absolute;
+        left: calc(var(--l) * 1rem);
+        top: calc(var(--t) * 1rem);
+        width: calc(var(--w) * 1rem);
+        height: calc(var(--h) * 1rem);
+        overflow: hidden;
+        margin: 0;
+      }
+      .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* guide lines */
+      .guides {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 40;
+      }
+      .guides span {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: var(--line);
+      }
+      .guides.light span {
+        background: rgba(245, 237, 225, 0.16);
+      }
+      .guides span:nth-child(1) {
+        left: 44.45rem;
+      }
+      .guides span:nth-child(2) {
+        left: 65.5rem;
+      }
+      .guides span:nth-child(3) {
+        left: 86.55rem;
+      }
+
+      /* ---------- logo ---------- */
+      .logo {
+        display: block;
+        width: 12.4rem;
+        height: auto;
+        color: currentColor;
+      }
+
+      /* ---------- hero ---------- */
+      .hero {
+        height: 84rem;
+        color: var(--cream);
+        overflow: hidden;
+      }
+      .hero .bg {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+      }
+      .hero .bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(20, 17, 14, 0.25) 0%,
+          rgba(20, 17, 14, 0) 22%,
+          rgba(20, 17, 14, 0) 78%,
+          rgba(20, 17, 14, 0.3) 100%
+        );
+      }
+      .nav-col a {
+        display: block;
+        font-size: 1.05rem;
+        line-height: 2.05rem;
+        letter-spacing: -0.01em;
+      }
+      .nav-col a:hover,
+      .f-col a:hover {
+        opacity: 0.6;
+      }
+      .burger {
+        display: none;
+      }
+      .stars {
+        font-size: 1.05rem;
+        letter-spacing: 0.25em;
+        line-height: 1;
+      }
+      .hours {
+        display: flex;
+        gap: 0;
+        align-items: center;
+      }
+      .hours .k {
+        padding-right: 0.9rem;
+      }
+      .hours .v {
+        padding-left: 0.9rem;
+        border-left: 1px solid currentColor;
+      }
+
+      /* ---------- generic ---------- */
+      .lbl {
+        font-size: 1.05rem;
+        line-height: 1.35rem;
+        letter-spacing: -0.01em;
+      }
+      .stat b {
+        display: block;
+        font-weight: 400;
+      }
+
+      /* ---------- services ---------- */
+      .svc .sub {
+        position: absolute;
+        left: 21rem;
+        top: 0;
+      }
+      .svc .sub .u {
+        display: inline-block;
+        margin-top: 1.65rem;
+      }
+
+      /* ---------- transformations ---------- */
+      .tbox {
+        position: absolute;
+        left: 2.4rem;
+        right: 2.4rem;
+        top: 7.9rem;
+        height: 75.2rem;
+        border: 1px solid var(--rule);
+      }
+      .center {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+      .tr-h {
+        z-index: 2;
+      }
+      .tr-h .r {
+        color: var(--rust);
+      }
+      .arw {
+        position: absolute;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-top: -0.8rem;
+        background: none;
+        border: 0;
+        padding: 0;
+        color: var(--ink);
+        cursor: pointer;
+      }
+      .arw svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* ---------- why ---------- */
+      .why-list {
+        position: absolute;
+        left: 2.4rem;
+        top: 58.9rem;
+        width: 62.1rem;
+        border-top: 1px solid var(--rule);
+      }
+      .why-list li {
+        height: 5.9rem;
+        border-bottom: 1px solid var(--rule);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 1.3rem;
+      }
+      .why-list small {
+        font-size: 1rem;
+      }
+
+      /* ---------- gallery ---------- */
+      .g-item {
+        position: absolute;
+        left: calc(var(--l) * 1rem);
+        bottom: 10.6rem;
+        width: 20.03rem;
+        cursor: pointer;
+      }
+      .g-item .g-img {
+        height: 24rem;
+        overflow: hidden;
+        transition: height 0.7s var(--ease);
+      }
+      .g-item .g-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 25%;
+      }
+      .g-item .g-cap {
+        height: 2rem;
+        transition: height 0.7s var(--ease);
+        overflow: hidden;
+      }
+      .g-item .g-cap span {
+        display: block;
+        margin-top: 0.65rem;
+        opacity: 0;
+        transition: opacity 0.4s;
+      }
+      .g-item.on .g-img {
+        height: 27rem;
+      }
+      .g-item.on .g-cap {
+        height: 4.3rem;
+      }
+      .g-item.on .g-cap span {
+        opacity: 1;
+      }
+
+      /* ---------- testimonials ---------- */
+      .tbox2 {
+        position: absolute;
+        left: 44.45rem;
+        top: 39rem;
+        width: 83.15rem;
+        height: 46rem;
+        border: 1px solid var(--rule);
+        display: grid;
+        grid-template-columns: 42.05rem 1fr;
+      }
+      .tcell {
+        position: relative;
+      }
+      .tcell + .tcell {
+        border-left: 1px solid var(--rule);
+      }
+      .tcell .q {
+        position: absolute;
+        left: 3.6rem;
+        right: 3.6rem;
+        top: 6.76rem;
+        font-size: 1.47rem;
+        line-height: 1.95rem;
+        letter-spacing: -0.01em;
+      }
+      .tcell .rt {
+        position: absolute;
+        left: 3.6rem;
+        top: 3.4rem;
+      }
+      .tcell .who {
+        position: absolute;
+        left: 3.6rem;
+        right: 3.6rem;
+        top: 37.6rem;
+        border-top: 1px solid var(--hair);
+        padding-top: 1.3rem;
+        display: flex;
+        gap: 1.2rem;
+      }
+      .tcell .who img {
+        object-position: 50% 20%;
+        width: 3.6rem;
+        height: 3.6rem;
+        object-fit: cover;
+      }
+      .tcell .who b {
+        display: block;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin-top: 0.1rem;
+      }
+      .tcell .who span {
+        display: block;
+        margin-top: 0.4rem;
+      }
+
+      /* ---------- CTA ---------- */
+      .cta {
+        height: 84rem;
+        color: var(--cream);
+        overflow: hidden;
+      }
+      .cta .bg {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+      }
+      .cta .bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(15, 12, 10, 0.28);
+      }
+      .cta-links {
+        display: flex;
+        justify-content: center;
+        gap: 4.5rem;
+        padding-left: 0.4rem;
+      }
+
+      /* ---------- footer ---------- */
+      .foot {
+        height: 84rem;
+        overflow: hidden;
+      }
+      .big-logo {
+        color: var(--ink);
+      }
+      .big-logo svg {
+        display: block;
+        width: 62.1rem;
+        height: auto;
+      }
+      .big {
+        font-size: 20rem;
+        line-height: 20rem;
+        letter-spacing: -0.045em;
+        white-space: nowrap;
+      }
+      .f-col a,
+      .f-col span {
+        display: block;
+        font-size: 1.05rem;
+        line-height: 2rem;
+        letter-spacing: -0.01em;
+      }
+      .f-col .gap {
+        height: 1.2rem;
+      }
+      .copy-big {
+        font-size: 20rem;
+        line-height: 20rem;
+        letter-spacing: -0.05em;
+        white-space: nowrap;
+      }
+
+      /* ---------- mobile menu ---------- */
+      .mmenu {
+        position: fixed;
+        inset: 0;
+        height: 100vh;
+        height: 100svh;
+        z-index: 90;
+        background: var(--ink);
+        color: var(--cream);
+        padding: 9.6rem 1.6rem 2.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        visibility: hidden;
+        clip-path: inset(0 0 100% 0);
+      }
+      .mmenu ol a {
+        display: flex;
+        align-items: baseline;
+        gap: 1.2rem;
+        padding: clamp(0.8rem, 1.6svh, 1.4rem) 0;
+        border-bottom: 1px solid rgba(245, 237, 225, 0.14);
+        font-size: clamp(2.8rem, 5.2svh, 4rem);
+        letter-spacing: -0.04em;
+        line-height: 1.1;
+      }
+      .mmenu ol small {
+        font-size: 1.1rem;
+        opacity: 0.6;
+      }
+      .mmenu .m-foot {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.1rem;
+      }
+
+      /* =====================================================
+         below 1024px: the same design, re-flowed for phones
+         ===================================================== */
+      @media (max-width: 1023px) {
+        .guides {
+          display: none;
+        }
+        .a,
+        .ar,
+        .pic,
+        .center,
+        .tbox,
+        .why-list,
+        .g-item,
+        .tbox2,
+        .svc .sub,
+        .tcell .q,
+        .tcell .rt,
+        .tcell .who {
+          position: static;
+        }
+        .sec {
+          height: auto !important;
+          padding: 0 1.6rem;
+        }
+        .h74 {
+          font-size: clamp(3.2rem, 9.2vw, 5.6rem);
+          line-height: 1.2;
+          letter-spacing: -0.045em;
+        }
+        .h74 .ln {
+          white-space: normal;
+        }
+        .t10,
+        .t105,
+        .lbl,
+        .nav-col a {
+          font-size: 1.1rem;
+          line-height: 1.5rem;
+        }
+        .pic {
+          width: 100%;
+          height: auto;
+        }
+        .sec [style*="width"] {
+          width: auto !important;
+        }
+        .tbox,
+        .tbox2 {
+          height: auto;
+        }
+        .h74 .w {
+          white-space: nowrap;
+        }
+        .sec [style*="top"] {
+          top: auto !important;
+        }
+
+        /* hero */
+        .hero {
+          padding: 0;
+          height: 100svh !important;
+          min-height: 600px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+        .hero .top {
+          position: absolute;
+          left: 1.6rem;
+          right: 1.6rem;
+          top: 1.6rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 5;
+        }
+        .hero .nav-col,
+        .hero .cta-top {
+          display: none;
+        }
+        .burger {
+          display: grid;
+          place-items: center;
+          width: 4.4rem;
+          height: 4.4rem;
+          border-radius: 50%;
+          border: 1px solid rgba(245, 237, 225, 0.4);
+          background: rgba(245, 237, 225, 0.08);
+          color: var(--cream);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          position: relative;
+          z-index: 95;
+        }
+        .burger span {
+          position: absolute;
+          width: 1.6rem;
+          height: 1px;
+          background: currentColor;
+          transition: transform 0.5s var(--ease);
+        }
+        .burger span:first-child {
+          transform: translateY(-0.3rem);
+        }
+        .burger span:last-child {
+          transform: translateY(0.3rem);
+        }
+        .menu-open .burger span:first-child {
+          transform: rotate(45deg);
+        }
+        .menu-open .burger span:last-child {
+          transform: rotate(-45deg);
+        }
+        .hero .bg::after {
+          background: linear-gradient(
+            0deg,
+            rgba(20, 17, 14, 0.75) 0%,
+            rgba(20, 17, 14, 0.2) 50%,
+            rgba(20, 17, 14, 0.3) 100%
+          );
+        }
+        .hero .h-img {
+          object-position: 66% 50%;
+        }
+        .hero-copy {
+          position: relative;
+          z-index: 2;
+          padding: 0 1.6rem 2.4rem;
+        }
+        .hero-copy .lbl {
+          margin-bottom: 1.6rem;
+        }
+        .hero-copy p.t10 {
+          margin-top: 1.6rem;
+          white-space: normal !important;
+        }
+        .hero-meta {
+          margin-top: 2.4rem;
+          padding-top: 1.6rem;
+          border-top: 1px solid rgba(245, 237, 225, 0.25);
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          gap: 1.2rem;
+        }
+        .hero-meta .h-right {
+          display: none;
+        }
+        .hours {
+          display: flex;
+        }
+
+        /* about */
+        .about {
+          padding-top: 7.2rem;
+        }
+        .about .lbl,
+        .svc-h .lbl,
+        .gal .lbl,
+        .testi .lbl {
+          margin-bottom: 1.6rem;
+        }
+        .about p.t10 {
+          margin-top: 2rem;
+        }
+        .about .u.a {
+          display: inline-block;
+          margin-top: 1.6rem;
+        }
+        .about .pic {
+          margin-top: 3.2rem;
+          aspect-ratio: 420 / 451;
+        }
+        .stats {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2.4rem 1.6rem;
+          margin-top: 2.8rem;
+        }
+
+        /* services */
+        .svc-h {
+          padding-top: 9.6rem;
+        }
+        .svc-grid {
+          display: grid;
+          gap: 4.8rem;
+          margin-top: 3.6rem;
+        }
+        .svc {
+          position: relative;
+        }
+        .svc .num {
+          margin-bottom: 0.8rem;
+        }
+        .svc .pic {
+          aspect-ratio: 421 / 461;
+        }
+        .svc .row {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.6rem;
+          margin-top: 1.4rem;
+        }
+        .svc .sub .u {
+          margin-top: 1.2rem;
+        }
+
+        /* transformations */
+        .trans {
+          padding-top: 9.6rem;
+        }
+        .tbox {
+          padding: 3.2rem 1.6rem;
+          text-align: center;
+          position: relative;
+        }
+        .tbox .pic {
+          margin: 2.4rem auto 0;
+          max-width: 32rem;
+          aspect-ratio: 420 / 460;
+        }
+        .tr-h {
+          margin-top: -6rem;
+          position: relative;
+          font-size: clamp(3.2rem, 9.4vw, 5rem) !important;
+        }
+        .tbox .arw {
+          position: absolute;
+          bottom: 3.2rem;
+        }
+        .tbox .arw.prev {
+          left: 1.6rem !important;
+        }
+        .tbox .arw.next {
+          right: 1.6rem !important;
+          left: auto !important;
+        }
+        .tbox .stats {
+          margin-top: 4rem;
+          text-align: left;
+          padding: 0 3.6rem;
+        }
+
+        /* why */
+        .why {
+          padding-top: 9.6rem;
+        }
+        .why .lbl {
+          margin-top: 2.4rem;
+        }
+        .why p.t10 {
+          margin-top: 1.2rem;
+        }
+        .why-list {
+          margin-top: 3.2rem;
+          width: 100%;
+        }
+        .why .pic {
+          margin-top: 3.2rem;
+          aspect-ratio: 621 / 751;
+        }
+
+        /* gallery */
+        .gal {
+          padding-top: 9.6rem;
+        }
+        .g-row {
+          display: flex;
+          gap: 1rem;
+          overflow-x: auto;
+          margin: 3.2rem -1.6rem 0;
+          padding: 0 1.6rem;
+          scroll-snap-type: x mandatory;
+          scrollbar-width: none;
+        }
+        .g-row::-webkit-scrollbar {
+          display: none;
+        }
+        .g-item {
+          flex: 0 0 62vw;
+          scroll-snap-align: start;
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .g-item .g-img,
+        .g-item.on .g-img {
+          height: auto;
+          aspect-ratio: 200 / 270;
+        }
+        .g-item .g-cap,
+        .g-item.on .g-cap {
+          height: auto;
+          padding-top: 0.8rem;
+        }
+        .g-item .g-cap span {
+          opacity: 1;
+        }
+
+        /* testimonials */
+        .testi {
+          padding-top: 9.6rem;
+        }
+        .testi p.t10 {
+          margin-top: 1.6rem;
+        }
+        .testi .stats {
+          margin-top: 3.2rem;
+        }
+        .tbox2 {
+          display: block;
+          width: 100%;
+          height: auto;
+          margin-top: 3.2rem;
+        }
+        .tcell {
+          padding: 2.4rem 2rem;
+        }
+        .tcell + .tcell {
+          border-left: 0;
+          border-top: 1px solid var(--rule);
+        }
+        .tcell .q {
+          margin-top: 1.6rem;
+          font-size: 1.4rem;
+          line-height: 1.9rem;
+        }
+        .tcell .who {
+          margin-top: 2.4rem;
+        }
+        .testi .t-arw {
+          display: none;
+        }
+
+        /* CTA */
+        .cta {
+          margin-top: 9.6rem;
+          height: 80svh !important;
+          min-height: 520px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+        }
+        .cta .center {
+          position: relative;
+          z-index: 2;
+        }
+        .cta-links {
+          flex-direction: column;
+          align-items: center;
+          gap: 1.6rem;
+          margin-top: 3.2rem;
+          padding: 0;
+        }
+
+        /* footer */
+        .foot {
+          padding-top: 6.4rem;
+          padding-bottom: 2.4rem;
+        }
+        .big {
+          font-size: 27vw;
+          line-height: 1;
+        }
+        .big-logo svg {
+          width: 100%;
+        }
+        .foot .logo-f {
+          display: none;
+        }
+        .foot .logo-f {
+          margin-top: 3.2rem;
+        }
+        .f-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 3.2rem 1.6rem;
+          margin-top: 3.2rem;
+        }
+        .f-bottom {
+          margin-top: 4rem;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.8rem 2rem;
+        }
+        .copy-big {
+          font-size: 25vw;
+          line-height: 1;
+          margin-top: 2.4rem;
+          text-align: right;
+        }
+      }
+      @media (min-width: 1024px) {
+        .mmenu {
+          display: none;
+        }
+        .hero .top,
+        .hero-copy,
+        .hero-meta,
+        .stats,
+        .svc-grid,
+        .f-grid,
+        .f-bottom,
+        .g-row {
+          display: contents;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- vertical guide lines that run through the whole page -->
+    <div class="guides" aria-hidden="true"><span></span><span></span><span></span></div>
+
+    <!-- mobile menu -->
+    <div class="mmenu" id="mmenu" aria-hidden="true">
+      <ol>
+        <li><a href="#about"><small>01</small>About</a></li>
+        <li><a href="#services"><small>02</small>Services</a></li>
+        <li><a href="#transformations"><small>03</small>Transformations</a></li>
+        <li><a href="#gallery"><small>04</small>Gallery</a></li>
+        <li><a href="#testimonials"><small>05</small>Testimonials</a></li>
+        <li><a href="#contact"><small>06</small>Contact</a></li>
+      </ol>
+      <div class="m-foot">
+        <a class="u" href="#contact">Book an appointment</a><span>Lahore</span>
+      </div>
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <header class="sec hero" id="top">
+      <div class="bg"><img class="fill h-img" src="assets/img/img-1.jpg" alt="img 1 — hero background" /></div>
+      <div class="guides light" aria-hidden="true"><span></span><span></span><span></span></div>
+
+      <div class="top">
+        <a class="a" style="--l: 2.4; --t: 2.3" href="#top" aria-label="Vogue Dental &amp; Aesthetics — home">
+          <svg class="logo" viewBox="0 0 124 40" fill="currentColor" aria-hidden="true">
+            <path d="M40 1.4c7.4 6.6 15.4 9.9 23.7 9.9 8.2 0 16-3.1 23-9.2l1 .9C80.8 10 72.8 13.6 63.7 13.6 54.5 13.6 46.1 9.8 38.9 2.4z" />
+            <path d="M86.8 1.8c.7-.6 1.9-.9 2.8-.6-.7.1-1.4.4-1.9 1z" />
+            <text x="62" y="32.5" text-anchor="middle" font-family="Cinzel, 'Times New Roman', serif" font-size="21" letter-spacing="0.6">VOGUE</text>
+            <text x="62" y="39.4" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="4.1" letter-spacing="1.5">DENTAL &amp; AESTHETICS</text>
+          </svg>
+        </a>
+        <nav class="a nav-col" style="--l: 44.47; --t: 1.86" aria-label="Main">
+          <a href="#top">Home</a><a href="#services">Services +</a><a href="#gallery">Gallery</a>
+        </nav>
+        <nav class="a nav-col" style="--l: 65.5; --t: 1.86" aria-label="More">
+          <a href="#about">About</a><a href="#testimonials">Testimonials</a><a href="#transformations">Transformation</a>
+        </nav>
+        <div class="a nav-col" style="--l: 86.53; --t: 1.86">
+          <a href="#contact">Contact</a><a href="tel:+923000000000">(+92) 3XX XXXXXXX</a>
+        </div>
+        <a class="ar t105 cta-top u" style="--r: 2.4; --t: 1.86; line-height: 2.05rem" href="#contact"
+          >Book an appointment<svg class="arrow-ne" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M1.5 8.5l7-7M3 1.5h5.5V7" /></svg
+        ></a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+
+      <div class="hero-copy">
+        <p class="a lbl rv-h" style="--l: 2.4; --t: 32.3">“Now accepting new patients”</p>
+        <h1 class="a h74 h-title" style="--l: 44.47; --t: 31.5">
+          <span class="ln"><i>R</i>EVEAL Y<i>O</i>UR MOST</span>
+          <span class="ln">RADIANT <i>S</i>MILE</span>
+        </h1>
+        <p class="a t10 rv-h" style="--l: 44.47; --t: 50.4; white-space: nowrap">
+          At Vogue, dentistry and aesthetics come together — a personalized luxury experience crafted to elevate your smile, skin, and confidence.
+        </p>
+        <div class="hero-meta">
+          <div class="a rv-h" style="--l: 2.4; --t: 78.9">
+            <div class="stars" aria-label="Five stars">★★★★★</div>
+            <p class="lbl" style="margin-top: 0.55rem">Loved by 35K+ on Instagram</p>
+          </div>
+          <div class="a hours lbl rv-h" style="--l: 55.4; --t: 79.3">
+            <span class="k">Opening hours</span>
+            <span class="v">Mon — Sat<br />10:00 AM — 8:00 PM</span>
+          </div>
+          <p class="ar lbl h-right rv-h" style="--r: 2.4; --t: 79.2; text-align: right">
+            Smile &amp; skin<br />under one roof
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ ABOUT ============ -->
+      <section class="sec about" id="about" style="height: 130rem">
+        <p class="a lbl" style="--l: 2.4; --t: 10.8">Who we are</p>
+        <h2 class="a h74 rv-lines" style="--l: 44.47; --t: 10">
+          <span class="ln">A <i>L</i>UXURY <i>D</i>ENTAL</span>
+          <span class="ln">EXPERIENCE</span>
+          <span class="ln"><i>D</i>ESIGNED <i>A</i>ROUND</span>
+          <span class="ln">YOU</span>
+        </h2>
+        <p class="a t10 rv" style="--l: 44.47; --t: 46.3; width: 83.15rem">
+          At Vogue, we believe a beautiful smile is deeply personal. Every appointment is thoughtfully tailored to enhance
+          confidence, elevate self-care, and create a calm experience that feels effortlessly luxurious from beginning to end.
+        </p>
+        <a class="a t105 u rv" style="--l: 44.47; --t: 52.1" href="#services">Read more about us</a>
+        <figure class="pic rv-img" style="--l: 44.47; --t: 57.5; --w: 42.05; --h: 45.1">
+          <img src="assets/img/img-2.jpg" alt="img 2" />
+        </figure>
+        <div class="stats">
+          <p class="a stat lbl rv" style="--l: 44.47; --t: 106.8"><b>2-in-1</b>Dentistry &amp; aesthetics</p>
+          <p class="a stat lbl rv" style="--l: 65.5; --t: 106.8"><b>35K+</b>Instagram community</p>
+          <p class="a stat lbl rv" style="--l: 44.47; --t: 113.8"><b>20</b>Dental &amp; skin treatments</p>
+          <p class="a stat lbl rv" style="--l: 65.5; --t: 113.8"><b>1</b>Doctor for smile &amp; skin</p>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES ============ -->
+      <section class="sec" id="services" style="height: 162rem">
+        <div class="svc-h">
+          <p class="a lbl" style="--l: 2.4; --t: 7.8">Signature services</p>
+          <h2 class="a h74 rv-lines" style="--l: 44.47; --t: 6.7">
+            <span class="ln"><i>C</i>URATED <i>B</i>EAUTY</span>
+            <span class="ln">SERVIC<i>E</i>S</span>
+          </h2>
+        </div>
+        <div class="svc-grid">
+          <article class="svc">
+            <p class="a lbl num" style="--l: 2.4; --t: 29.5">01</p>
+            <figure class="pic rv-img" style="--l: 2.4; --t: 31.5; --w: 42.07; --h: 46.1"><img src="assets/img/img-3.jpg" alt="img 3" /></figure>
+            <div class="a row" style="--l: 2.4; --t: 79.1; width: 42rem">
+              <h3 class="t147">Cosmetic dentistry</h3>
+              <div class="sub lbl" style="top: 0.05rem">
+                <p>Veneers<br />Teeth whitening<br />Invisible braces</p>
+                <a class="u" href="#contact">Explore service</a>
+              </div>
+            </div>
+          </article>
+          <article class="svc">
+            <p class="a lbl num" style="--l: 86.53; --t: 29.5">02</p>
+            <figure class="pic rv-img" style="--l: 86.53; --t: 31.5; --w: 41.07; --h: 46.1"><img src="assets/img/img-4.jpg" alt="img 4" /></figure>
+            <div class="a row" style="--l: 86.53; --t: 79.1; width: 41rem">
+              <h3 class="t147">Restorative care</h3>
+              <div class="sub lbl" style="top: 0.05rem">
+                <p>Dental implants<br />Root canal<br />Crowns &amp; bridges</p>
+                <a class="u" href="#contact">Explore service</a>
+              </div>
+            </div>
+          </article>
+          <article class="svc">
+            <p class="a lbl num" style="--l: 2.4; --t: 92">03</p>
+            <figure class="pic rv-img" style="--l: 2.4; --t: 94; --w: 42.07; --h: 46.1"><img src="assets/img/img-5.jpg" alt="img 5" /></figure>
+            <div class="a row" style="--l: 2.4; --t: 141.6; width: 42rem">
+              <h3 class="t147">Skin rituals</h3>
+              <div class="sub lbl" style="top: 0.05rem">
+                <p>HydraFacial<br />Glass skin facial<br />Glow peel</p>
+                <a class="u" href="#contact">Explore service</a>
+              </div>
+            </div>
+          </article>
+          <article class="svc">
+            <p class="a lbl num" style="--l: 86.53; --t: 92">04</p>
+            <figure class="pic rv-img" style="--l: 86.53; --t: 94; --w: 41.07; --h: 46.1"><img src="assets/img/img-6.jpg" alt="img 6" /></figure>
+            <div class="a row" style="--l: 86.53; --t: 141.6; width: 41rem">
+              <h3 class="t147">Laser &amp; injectables</h3>
+              <div class="sub lbl" style="top: 0.05rem">
+                <p>Face laser<br />Botox<br />PRP &amp; PRGF</p>
+                <a class="u" href="#contact">Explore service</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ TRANSFORMATIONS ============ -->
+      <section class="sec trans" id="transformations" style="height: 92rem">
+        <div class="tbox">
+          <p class="center lbl" style="top: 6.6rem">Real transformations</p>
+          <figure class="pic rv-img" style="--l: 42.05; --t: 14.7; --w: 42.05; --h: 46"><img src="assets/img/img-7.jpg" alt="img 7" /></figure>
+          <h2 class="center h74 tr-h" style="top: 33.4rem">
+            <span class="ln"><span class="r"><i>Y</i>OU</span> CAN SEE <i class="amp">&amp;</i> <span class="r">FEEL</span></span>
+          </h2>
+          <button class="arw prev" style="left: 2.4rem; top: 37.6rem" aria-label="Previous">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M15 8H1.5M7 2.5 1.5 8 7 13.5" /></svg>
+          </button>
+          <button class="arw next" style="left: 121.2rem; top: 37.6rem" aria-label="Next">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M1 8h13.5M9 2.5 14.5 8 9 13.5" /></svg>
+          </button>
+          <div class="stats">
+            <p class="a stat lbl" style="--l: 42.05; --t: 66.7"><b>Smile</b>Makeovers</p>
+            <p class="a stat lbl" style="--l: 63.1; --t: 66.7"><b>Skin</b>Transformations</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WHY ============ -->
+      <section class="sec why" style="height: 100rem">
+        <h2 class="a h74 rv-lines" style="--l: 2.4; --t: 12.6">
+          <span class="ln"><i>E</i>LEVATED</span>
+          <span class="ln">BEAUT<i>Y</i></span>
+          <span class="ln">E<i>X</i>PERIENCE</span>
+        </h2>
+        <p class="a lbl" style="--l: 2.4; --t: 39.9">Why Vogue</p>
+        <p class="a t10 rv" style="--l: 2.4; --t: 44.3; width: 61.7rem">
+          Every detail at Vogue is intentionally designed to create a dental and aesthetic experience that feels refined, relaxing,
+          and deeply personal. From one doctor who treats both smile and skin to our calm, considered clinic, luxury is felt in every
+          moment.
+        </p>
+        <ol class="why-list t147">
+          <li class="rv">Personalized treatment plans <small>01</small></li>
+          <li class="rv">One doctor for smile &amp; skin <small>02</small></li>
+          <li class="rv">Luxury clinic atmosphere <small>03</small></li>
+          <li class="rv">Advanced, gentle techniques <small>04</small></li>
+          <li class="rv">Comfort &amp; hygiene first <small>05</small></li>
+        </ol>
+        <figure class="pic rv-img" style="--l: 65.5; --t: 13.4; --w: 62.1; --h: 75.1"><img src="assets/img/img-8.jpg" alt="img 8" /></figure>
+      </section>
+
+      <!-- ============ GALLERY ============ -->
+      <section class="sec gal" id="gallery" style="height: 76rem">
+        <p class="a lbl" style="--l: 2.4; --t: 10.6">Inside Vogue</p>
+        <h2 class="a h74 rv-lines" style="--l: 44.47; --t: 9.6">
+          <span class="ln">M<i>O</i>MENTS OF</span>
+          <span class="ln"><i>B</i>EAUTY, <i>E</i>LEGANCE</span>
+        </h2>
+        <div class="g-row" id="gRow">
+          <div class="g-item" style="--l: 2.4"><div class="g-cap lbl">01<span>Porcelain veneers</span></div><div class="g-img"><img src="assets/img/img-9.jpg" alt="img 9" /></div></div>
+          <div class="g-item" style="--l: 23.43"><div class="g-cap lbl">02<span>Glass skin facial</span></div><div class="g-img"><img src="assets/img/img-10.jpg" alt="img 10" /></div></div>
+          <div class="g-item on" style="--l: 44.47"><div class="g-cap lbl">03<span>Signature smile makeover</span></div><div class="g-img"><img src="assets/img/img-11.jpg" alt="img 11" /></div></div>
+          <div class="g-item" style="--l: 65.5"><div class="g-cap lbl">04<span>HydraFacial</span></div><div class="g-img"><img src="assets/img/img-12.jpg" alt="img 12" /></div></div>
+          <div class="g-item" style="--l: 86.53"><div class="g-cap lbl">05<span>Teeth whitening</span></div><div class="g-img"><img src="assets/img/img-13.jpg" alt="img 13" /></div></div>
+          <div class="g-item" style="--l: 107.57"><div class="g-cap lbl">06<span>Botox &amp; PRP</span></div><div class="g-img"><img src="assets/img/img-14.jpg" alt="img 14" /></div></div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIALS ============ -->
+      <section class="sec testi" id="testimonials" style="height: 96.3rem">
+        <p class="a lbl" style="--l: 2.4; --t: 11.3">Patient experiences</p>
+        <h2 class="a h74 rv-lines" style="--l: 44.47; --t: 10.3">
+          <span class="ln"><i>W</i>HO VALUE <i>L</i>UXURY</span>
+          <span class="ln"><i class="amp">&amp;</i> CARE</span>
+        </h2>
+        <p class="a t10 rv" style="--l: 44.47; --t: 29.4; width: 83.15rem">
+          From smile makeovers to relaxing skin treatments, our patients trust Vogue for results that feel elegant, effortless, and
+          confidence-boosting.
+        </p>
+        <div class="stats">
+          <p class="a stat lbl" style="--l: 2.4; --t: 38.7"><b>35K+</b>Instagram followers</p>
+          <p class="a stat lbl" style="--l: 23.43; --t: 38.7"><b>2024</b>Founded in Lahore</p>
+          <p class="a stat lbl" style="--l: 2.4; --t: 51.9"><b>20</b>Treatments under one roof</p>
+          <p class="a stat lbl" style="--l: 23.43; --t: 51.9"><b>Dr. Maha</b>Lead clinician</p>
+        </div>
+        <div class="tbox2 rv">
+          <div class="tcell">
+            <p class="rt lbl"><span class="stars" style="letter-spacing: 0.2em">★★★★★</span>&nbsp; Google review</p>
+            <p class="q">“Placeholder — a real patient review goes here. Two or three short, honest lines about how they felt before, during and after their treatment at Vogue.”</p>
+            <div class="who">
+              <img src="assets/img/img-15.jpg" alt="img 15" />
+              <div class="lbl"><b>Patient name</b><span>Veneers patient</span></div>
+            </div>
+          </div>
+          <div class="tcell">
+            <p class="rt lbl"><span class="stars" style="letter-spacing: 0.2em">★★★★★</span>&nbsp; Google review</p>
+            <p class="q">“Placeholder — a second real review. Keep it short and specific so it reads like the patient’s own voice.”</p>
+            <div class="who">
+              <img src="assets/img/img-16.jpg" alt="img 16" />
+              <div class="lbl"><b>Patient name</b><span>HydraFacial client</span></div>
+            </div>
+          </div>
+        </div>
+        <button class="arw t-arw" style="left: 3.1rem; top: 79.8rem" aria-label="Previous reviews">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M15 8H1.5M7 2.5 1.5 8 7 13.5" /></svg>
+        </button>
+        <button class="arw t-arw" style="left: 8.8rem; top: 79.8rem" aria-label="Next reviews">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M1 8h13.5M9 2.5 14.5 8 9 13.5" /></svg>
+        </button>
+      </section>
+
+      <!-- ============ CTA ============ -->
+      <section class="sec cta" id="contact">
+        <div class="bg"><img class="fill c-img" src="assets/img/img-17.jpg" alt="img 17 — clinic interior" /></div>
+        <div class="guides light" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="center" style="top: 25rem">
+          <h2 class="h74 rv-lines">
+            <span class="ln"><i>R</i>ESERVE YO<i>U</i>R</span>
+            <span class="ln">MOMEN<i>T</i> OF BEAUTY</span>
+            <span class="ln">&amp; R<i>E</i>LAXATION</span>
+          </h2>
+          <div class="cta-links t105 rv" style="margin-top: 5.2rem">
+            <a class="u" href="#"
+              >Book an appointment<svg class="arrow-ne" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M1.5 8.5l7-7M3 1.5h5.5V7" /></svg
+            ></a>
+            <a class="u" href="#"
+              >Contact our team<svg class="arrow-ne" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M1.5 8.5l7-7M3 1.5h5.5V7" /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="sec foot">
+      <a class="a big-logo" style="--l: 2.4; --t: 11" href="#top" aria-label="Vogue Dental &amp; Aesthetics — back to top">
+        <svg viewBox="20.4 0.8 82 40.2" fill="currentColor" aria-hidden="true">
+          <path d="M40 1.4c7.4 6.6 15.4 9.9 23.7 9.9 8.2 0 16-3.1 23-9.2l1 .9C80.8 10 72.8 13.6 63.7 13.6 54.5 13.6 46.1 9.8 38.9 2.4z" />
+          <path d="M86.8 1.8c.7-.6 1.9-.9 2.8-.6-.7.1-1.4.4-1.9 1z" />
+          <text x="62" y="32.5" text-anchor="middle" font-family="Cinzel, 'Times New Roman', serif" font-size="21" letter-spacing="0.6">VOGUE</text>
+          <text x="62" y="39.4" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="4.1" letter-spacing="1.5">DENTAL &amp; AESTHETICS</text>
+        </svg>
+      </a>
+      <div class="f-grid">
+        <nav class="a f-col" style="--l: 86.53; --t: 25.26">
+          <a href="#top">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a>
+        </nav>
+        <nav class="a f-col" style="--l: 107.57; --t: 25.26">
+          <span>Services</span><a href="#services">Cosmetic dentistry</a><a href="#services">Restorative care</a><a href="#services">Orthodontics</a><a href="#services">Skin rituals</a><a href="#services">Laser &amp; injectables</a>
+        </nav>
+        <div class="a hours lbl" style="--l: 2.4; --t: 45.6">
+          <span class="k">Opening hours</span>
+          <span class="v">Mon — Sat<br />10:00 AM — 8:00 PM</span>
+        </div>
+        <p class="a lbl" style="--l: 44.47; --t: 45.6">Sunday<br />By appointment</p>
+        <nav class="a f-col" style="--l: 86.53; --t: 45.3">
+          <span>Social links</span><a href="https://www.instagram.com/voguedentalaesthetics/" target="_blank" rel="noopener">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a>
+        </nav>
+        <div class="a f-col" style="--l: 107.57; --t: 45.3">
+          <a href="tel:+923000000000">(+92) 3XX XXXXXXX</a><a href="mailto:email@voguedental.pk">email@voguedental.pk</a>
+          <div class="gap"></div>
+          <span>Address</span><span>Lahore, Pakistan</span>
+        </div>
+      </div>
+      <div class="f-bottom">
+        <p class="a lbl" style="--l: 2.4; --t: 74.2">© 2026 Vogue. All rights reserved.</p>
+        <a class="a lbl" style="--l: 28.9; --t: 74.2" href="#">Privacy policy</a>
+        <a class="a lbl" style="--l: 44.47; --t: 74.2" href="#">Terms &amp; condition</a>
+      </div>
+      <p class="ar copy-big" style="--r: 2.4; --t: 64.6" aria-hidden="true">© 2026</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script>
+      (() => {
+        const $ = (s, c = document) => c.querySelector(s),
+          $$ = (s, c = document) => [...c.querySelectorAll(s)];
+        const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const hasG = typeof gsap !== "undefined";
+
+        /* ---------- smooth scroll ---------- */
+        let lenis = null;
+        if (hasG) gsap.registerPlugin(ScrollTrigger);
+        if (hasG && !reduce && typeof Lenis !== "undefined") {
+          lenis = new Lenis({ lerp: 0.1 });
+          lenis.on("scroll", ScrollTrigger.update);
+          gsap.ticker.add((t) => lenis.raf(t * 1000));
+          gsap.ticker.lagSmoothing(0);
+        }
+        $$('a[href^="#"]').forEach((a) =>
+          a.addEventListener("click", (e) => {
+            const h = a.getAttribute("href");
+            e.preventDefault();
+            if (h.length < 2) return;
+            if (document.body.classList.contains("menu-open")) toggleMenu(false);
+            const el = $(h);
+            if (el) lenis ? lenis.scrollTo(el) : el.scrollIntoView({ behavior: "smooth" });
+          }),
+        );
+
+        /* ---------- mobile menu ---------- */
+        const burger = $("#burger"),
+          mm = $("#mmenu");
+        function toggleMenu(open) {
+          document.body.classList.toggle("menu-open", open);
+          burger.setAttribute("aria-expanded", open);
+          burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+          mm.setAttribute("aria-hidden", !open);
+          if (lenis) open ? lenis.stop() : lenis.start();
+          if (!hasG || reduce) {
+            mm.style.visibility = open ? "visible" : "hidden";
+            mm.style.clipPath = open ? "inset(0)" : "inset(0 0 100% 0)";
+            return;
+          }
+          if (open) {
+            gsap.set(mm, { visibility: "visible" });
+            gsap.to(mm, { clipPath: "inset(0 0 0% 0)", duration: 0.8, ease: "expo.inOut" });
+            gsap.fromTo($$("li, .m-foot", mm), { y: 30, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.05, duration: 0.8, ease: "expo.out", delay: 0.35 });
+          } else {
+            gsap.to(mm, { clipPath: "inset(0 0 100% 0)", duration: 0.7, ease: "expo.inOut", onComplete: () => gsap.set(mm, { visibility: "hidden" }) });
+          }
+        }
+        burger.addEventListener("click", () => toggleMenu(!document.body.classList.contains("menu-open")));
+
+        /* ---------- keep each swash capital glued to the rest of its word ---------- */
+        $$(".h74 .ln").forEach((ln) => {
+          const out = document.createDocumentFragment();
+          let word = null;
+          [...ln.childNodes].forEach((n) => {
+            const parts = n.nodeType === 3 ? n.textContent.split(/(\s+)/) : [n];
+            parts.forEach((p) => {
+              if (typeof p === "string") {
+                if (!p) return;
+                if (/^\s+$/.test(p)) { word = null; out.append(p); return; }
+                p = document.createTextNode(p);
+              }
+              if (!word) { word = document.createElement("span"); word.className = "w"; out.append(word); }
+              word.append(p);
+            });
+          });
+          ln.replaceChildren(out);
+        });
+
+        /* ---------- gallery: hovered item grows ---------- */
+        const items = $$(".g-item");
+        if (matchMedia("(hover: hover)").matches)
+          items.forEach((it) => it.addEventListener("mouseenter", () => items.forEach((x) => x.classList.toggle("on", x === it))));
+
+        if (!hasG || reduce) return;
+
+        /* ---------- hero intro ---------- */
+        const tl = gsap.timeline({ delay: 0.1 });
+        tl.from(".h-img", { scale: 1.18, duration: 2.4, ease: "expo.out" }, 0)
+          .from(".hero .top > *", { y: -16, opacity: 0, duration: 1, ease: "power3.out", stagger: 0.06 }, 0.4)
+          .from(".h-title .ln", { yPercent: 60, opacity: 0, duration: 1.3, ease: "expo.out", stagger: 0.12 }, 0.6)
+          .from(".h-title i", { opacity: 0, scale: 0.6, rotate: -8, duration: 1.4, ease: "expo.out", stagger: 0.1 }, 0.9)
+          .from(".rv-h", { y: 14, opacity: 0, duration: 1, ease: "power3.out", stagger: 0.06 }, 1.1);
+        gsap.to(".h-img", {
+          yPercent: 10,
+          ease: "none",
+          scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true },
+        });
+
+        /* ---------- headings: lines rise, swash letters draw in ---------- */
+        $$(".rv-lines").forEach((h) => {
+          const t = gsap.timeline({ scrollTrigger: { trigger: h, start: "top 85%" } });
+          t.from($$(".ln", h), { yPercent: 60, opacity: 0, duration: 1.2, ease: "expo.out", stagger: 0.1 }).from(
+            $$("i", h),
+            { opacity: 0, scale: 0.6, rotate: -8, duration: 1.3, ease: "expo.out", stagger: 0.08 },
+            0.25,
+          );
+        });
+
+        /* ---------- images reveal from bottom, with a slow zoom ---------- */
+        $$(".rv-img").forEach((f) => {
+          gsap.from(f, {
+            clipPath: "inset(100% 0% 0% 0%)",
+            duration: 1.4,
+            ease: "expo.inOut",
+            scrollTrigger: { trigger: f, start: "top 88%" },
+          });
+          gsap.fromTo($("img", f), { scale: 1.2 }, { scale: 1, ease: "none", scrollTrigger: { trigger: f, start: "top bottom", end: "bottom top", scrub: true } });
+        });
+
+        /* ---------- small copy fades up ---------- */
+        $$(".rv").forEach((el) =>
+          gsap.from(el, { y: 20, opacity: 0, duration: 1, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 92%" } }),
+        );
+
+        /* ---------- transformations: box draws, heading slides in from both sides ---------- */
+        gsap.from(".tbox", { clipPath: "inset(0 50% 0 50%)", duration: 1.6, ease: "expo.inOut", scrollTrigger: { trigger: ".tbox", start: "top 80%" } });
+        gsap.from(".tr-h .r", { x: (i) => (i ? 80 : -80), opacity: 0, duration: 1.4, ease: "expo.out", scrollTrigger: { trigger: ".tr-h", start: "top 80%" } });
+
+        /* ---------- gallery stagger ---------- */
+        gsap.from(".g-item", { y: 60, opacity: 0, duration: 1.1, ease: "expo.out", stagger: 0.08, scrollTrigger: { trigger: "#gRow", start: "top 85%" } });
+
+        /* ---------- CTA background drifts ---------- */
+        gsap.fromTo(".c-img", { yPercent: -8, scale: 1.15 }, { yPercent: 8, scale: 1.15, ease: "none", scrollTrigger: { trigger: ".cta", start: "top bottom", end: "bottom top", scrub: true } });
+
+        /* ---------- footer wordmark letters rise ---------- */
+        gsap.from(".big-logo, .copy-big", { yPercent: 40, opacity: 0, duration: 1.4, ease: "expo.out", stagger: 0.15, scrollTrigger: { trigger: ".foot", start: "top 70%" } });
+
+        addEventListener("load", () => ScrollTrigger.refresh());
+      })();
+    </script>
+  </body>
+</html>
